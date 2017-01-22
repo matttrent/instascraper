@@ -109,7 +109,7 @@ def html_to_markdown
 		
 	  if !File.exist?(new_filepath)
 		  puts "MARKYING " + new_filename
-			marky = "marky.rb -o #{MARKDOWN_PATH} -f htmlfile #{f}"
+			marky = "./marky.rb -o #{MARKDOWN_PATH} -f htmlfile #{f}"
 			m_return = system(marky)
 		  sleep(Random.rand * 2)
 		else
